@@ -1,0 +1,12 @@
+{
+  "name": "portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/index.css -o ./assets/tailwind.css -w"
+  },
+  "keywords": [],
+  "author": "Dicky Giancini",
+  "license": "ISC"
+}

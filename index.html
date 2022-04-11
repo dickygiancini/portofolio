@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicky Giancini - Full Stack Developer</title>
+    <link rel="stylesheet" href="./assets/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/31cb9938fd.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-body text-white font-poppins pb-12">
+
+    <!-- Navbar -->
+    <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold">
+                Dicky Giancini
+            </div>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="#" class="text-selected-text">Home</a>
+                <a href="#work">My Work</a>
+                <a href="#experience">Experiences</a>
+                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact</button></a>
+            </div>
+            <div class="md:hidden flex items-center">
+                <button class="mobile-menu-button"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu mx-auto">
+            <ul class="items-center px-2 py-2 ml-6">
+                <li class="my-2"><a href="#work">My Work</a></li>
+                <li class="my-2"><a href="#experience">Experiences</a></li>
+                <li class="my-2"><a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
