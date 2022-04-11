@@ -1,3 +1,3 @@
-# portofolio
+# Portofolio
 Portofolio website, forged in tailwind css
-Current status : # In Development
+Current status : In Development
