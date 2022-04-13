@@ -12,34 +12,69 @@
 
     <script src="https://kit.fontawesome.com/31cb9938fd.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-body text-white font-poppins pb-12">
+<body class="pb-12 text-white bg-body font-poppins">
 
     <!-- Navbar -->
     <header class="py-6">
-        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <div class="container flex items-center justify-between w-full px-8 mx-auto md:px-14 lg:px-24">
             <div class="text-lg font-bold">
                 Dicky Giancini
             </div>
-            <div class="hidden md:flex space-x-12 items-center">
+            <div class="items-center hidden space-x-12 md:flex">
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#work">My Work</a>
                 <a href="#experience">Experiences</a>
-                <a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact</button></a>
+                <a href="#contact"><button class="px-6 py-2 font-bold bg-theme">Contact</button></a>
             </div>
-            <div class="md:hidden flex items-center">
+            <div class="flex items-center md:hidden">
                 <button class="mobile-menu-button"><i class="fa-solid fa-bars"></i></button>
             </div>
 
         </div>
         <!-- Mobile menu -->
-        <div class="hidden mobile-menu mx-auto">
+        <div class="hidden mx-auto mobile-menu">
             <ul class="items-center px-2 py-2 ml-6">
                 <li class="my-2"><a href="#work">My Work</a></li>
                 <li class="my-2"><a href="#experience">Experiences</a></li>
-                <li class="my-2"><a href="#contact"><button class="px-6 py-2 bg-theme font-bold">Contact</button></a></li>
+                <li class="my-2"><a href="#contact"><button class="px-6 py-2 font-bold bg-theme">Contact</button></a></li>
             </ul>
         </div>
     </header>
+
+    <div class="container flex items-center justify-between w-full px-8 mx-auto mt-16 md:px-14 lg:px-24">
+        <div class="flex flex-wrap md:flex-nowrap">
+
+            <nav class="fixed inline-block lg:mr-24 lg:w-4 left-percentage xl:block">
+                <div class="absolute space-y-6 transform -translate-x-1/2 left-50 mt-36">
+                    <a href="#" class="block border-4 rounded-full nav-dot selected-circle w-7 h-7 border-nav bg-body">
+                        <span class="px-2 py-1 ml-10 bg-black rounded-md opacity-0">Home</span>
+                    </a>
+                    <a href="#" class="block border-4 rounded-full nav-dot w-7 h-7 border-nav bg-body">
+                        <span class="px-2 py-1 ml-10 bg-black rounded-md opacity-0">My&nbsp;Work</span>
+                    </a>
+                    <a href="#" class="block border-4 rounded-full nav-dot w-7 h-7 border-nav bg-body">
+                        <span class="px-2 py-1 ml-10 bg-black rounded-md opacity-0">Experience</span>
+                    </a>
+                    <a href="#" class="block border-4 rounded-full nav-dot w-7 h-7 border-nav bg-body">
+                        <span class="px-2 py-1 ml-10 bg-black rounded-md opacity-0">Contact</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="flex flex-wrap justify-center max-w-xl mt-0 lg:ml-20 md:justify-start md:my-36">
+                <h1 class="text-5xl font-bold text-center md:text-6xl lg:text-7xl md:text-left">Reliable <br> Full Stack Developer</h1>
+                <div class="flex justify-center w-full md:justify-start">
+                    <button class="flex items-center px-8 py-4 mt-12 space-x-3 font-bold text-white bg-theme">
+                        <div>
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <span>My Work</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <script>
         const btn = document.querySelector("button.mobile-menu-button");
